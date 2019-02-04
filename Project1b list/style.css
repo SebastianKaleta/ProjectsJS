@@ -9,9 +9,8 @@ ul {
     position: absolute;
     width: 40%;
     top: 10%;
-    left: 50%;
-    transform: translate(-50%, 10%);
-    border: 2px solid red;
+    left: 28.5%;
+    /* transform: translate(-50%, 10%); */
 
 }
 
