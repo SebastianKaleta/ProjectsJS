@@ -19,10 +19,14 @@
         btn.addEventListener('click', function () {
             const newLi = document.createElement('li');
             newLi.textContent = number;
-            document.body.appendChild(newLi);
-            number++;
+            const list = document.querySelector('ul');
+            list.appendChild(newLi);
 
-            if (number / 3)
+
+            if (number % 3 == 0) {
+                newLi.classList.add('big');
+            }
+            number++;
         });
     </script>
 </body>
