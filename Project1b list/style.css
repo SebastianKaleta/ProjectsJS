@@ -8,10 +8,16 @@ ul {
     display: block;
     position: absolute;
     /* width: 100%; */
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, 0);
     padding: 0;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 li {
