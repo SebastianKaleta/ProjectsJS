@@ -1,24 +1,24 @@
 .big {
-    font-size: 20px;
-    font-family: arial;
+    font-size: 25px;
+    font-family: fantasy, sans-serif;
     color: cornflowerblue
 }
 
 ul {
     display: block;
     position: absolute;
-    width: 40%;
-    top: 10%;
-    left: 28.5%;
-    /* transform: translate(-50%, 10%); */
-
+    /* width: 100%; */
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    padding: 0;
 }
 
 li {
     display: block;
     list-style: none;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     width: 10%;
     border-bottom: solid 2px goldenrod;
     line-height: 50px;
@@ -30,8 +30,9 @@ li {
 
 button {
     position: absolute;
+    top: 10%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -0);
     background-color: rgb(255, 255, 255);
     border: 2px dotted rgb(0, 0, 0);
     font-size: 30px;
