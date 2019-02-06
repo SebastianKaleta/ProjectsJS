@@ -1,9 +1,11 @@
-document.body.style.height = 10000 + "px";
+document.body.style.height = "10000px";
 let size = 5;
 let grow = true;
 const slider = document.createElement('div');
 document.body.appendChild(slider);
 slider.style.backgroundColor = "green";
+slider.style.top = 0;
+slider.style.left = 0;
 slider.style.width = "100%";
 slider.style.height = size + "px";
 slider.style.position = "fixed";
