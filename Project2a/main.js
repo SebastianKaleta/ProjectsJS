@@ -1,8 +1,12 @@
-document.body.style.height = "10000px";
 let size = 5;
 let grow = true;
+
+
+document.body.style.height = "10000px";
+
 const slider = document.createElement('div');
 document.body.appendChild(slider);
+
 slider.style.backgroundColor = "green";
 slider.style.top = 0;
 slider.style.left = 0;
