@@ -16,6 +16,9 @@ btn.addEventListener('click', function () {
     //     if (click >= 2) {
     //         list[i].style.fontSize = size + "px";
     //     }
+
+
+    //forEach loop
     list.forEach(function (list) {
         list.style.display = "block";
         if (click >= 2) {
