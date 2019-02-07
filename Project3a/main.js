@@ -18,26 +18,28 @@ btn.addEventListener('click', function () {
     //     }
 
 
-    //forEach loop
-    list.forEach(function (list) {
-        list.style.display = "block";
-        if (click >= 2) {
-            list.style.fontSize = size + "px";
+    //     //forEach loop
+    //     list.forEach(function (list) {
+    //         list.style.display = "block";
+    //         if (click >= 2) {
+    //             list.style.fontSize = size + "px";
+    //         }
+    //     });
+
+    //     size++; //iteration outside of loop, becouse inside iterating every li separately
+    // });
+
+
+
+    //another way
+    btn.addEventListener('click', () => {
+        for (let i = 0; i < list.length; i++) {
+            list[i].style.display = "block";
+
+            if (click >= 2) {
+                list[i].style.fontSize = `${size}px`;
+            }
         }
+        size++;
     });
-
-    size++; //iteration outside of loop, becouse inside iterating every li separately
-});
-
-
-
-//another way
-btn.addEventListener('click', () => {
-    for (let i = 0; i < list.length; i++) {
-        list[i].style.display = "block";
-
-        if (click >= 2) {
-            list[i].style.fontSize = `${size}px`;
-        }
-    }
 });
