@@ -27,5 +27,17 @@ btn.addEventListener('click', function () {
     });
 
     size++; //iteration outside of loop, becouse inside iterating every li separately
+});
 
+
+
+//another way
+btn.addEventListener('click', () => {
+    for (let i = 0; i < list.length; i++) {
+        list[i].style.display = "block";
+
+        if (click >= 2) {
+            list[i].style.fontSize = `${size}px`;
+        }
+    }
 });
