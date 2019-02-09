@@ -39,7 +39,8 @@ btn.addEventListener('click', function () {
             if (click >= 2) {
                 list[i].style.fontSize = `${size}px`;
             }
+
         }
-        size++;
+        size++; //iteration outside of loop, becouse inside iterating every li separately
     });
 });
