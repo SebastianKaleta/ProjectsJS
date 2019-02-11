@@ -9,35 +9,26 @@ document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
 const changeColor = (e) => {
 
     //IF STATEMENT
-    // if (e.keyCode === 38) {
+    // if (e.keyCode === 38 && red<255) {
     //     red++;
     //     green++;
     //     blue++;
     //     document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
-    //     console.log("up" + document.body.style.backgroundColor)
-    // } else if (e.keyCode === 40) {
+    // } else if (e.keyCode === 40 && red>0) {
     //     red--;
     //     green--;
     //     blue--;
     //     document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
-    //     console.log("down" + document.body.style.backgroundColor)
     // }
 
     //CASE STATEMENT
     switch (e.keyCode) {
         case 38:
-            red++;
-            green++;
-            blue++;
-            document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
-            console.log("up" + document.body.style.backgroundColor)
+            document.body.style.backgroundColor = `rgb(${red<255? red++ : red},${green<255?green++:green},${blue<255? blue++:blue})`;
             break;
         case 40:
-            red--;
-            green--;
-            blue--;
-            document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
-            console.log("down" + document.body.style.backgroundColor)
+            document.body.style.backgroundColor = `rgb(${red>0? red-- : red},${green>0?green--:green},${blue>0? blue--:blue})`;
+
             break;
 
     }
