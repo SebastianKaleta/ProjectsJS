@@ -9,13 +9,13 @@ document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
 const changeColor = (e) => {
 
     //IF STATEMENT
-    // if (e.keyCode == "38") {
+    // if (e.keyCode === 38) {
     //     red++;
     //     green++;
     //     blue++;
     //     document.body.style.backgroundColor = `rgb(${red},${green},${blue})`;
     //     console.log("up" + document.body.style.backgroundColor)
-    // } else if (e.keyCode == "40") {
+    // } else if (e.keyCode === 40) {
     //     red--;
     //     green--;
     //     blue--;
