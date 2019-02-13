@@ -1,4 +1,4 @@
-const options = [];
+const options = ["Wykonaj", "Przemyśl to zanim przejdziesz do dzialania", "Życie jest zbyt krótkie, by myśleć!"];
 
 const showAdArr = ["Walcz!", " Nie wiem!", "Wymyśl coś!"];
 
@@ -7,18 +7,20 @@ const btnAdd = document.querySelector('.add');
 const btnClean = document.querySelector('.clean');
 const btnShow = document.querySelector('.showAdvice');
 const btnOpp = document.querySelector('.showOptions');
+const input = document.querySelector('input');
 
 const addOption = (e) => {
     e.preventDefault();
-    const input = document.querySelector('input');
-    options = input.value;
+
+    options.push(input.value);
     console.log(options);
+    input.value = "";
 }
 
 const cleanOption = (e) => {
     e.preventDefault();
-    options = "";
-    console.log(options.value);
+    options.length = 0;
+    console.log(options);
 }
 
 const showAdvice = (e) => {
