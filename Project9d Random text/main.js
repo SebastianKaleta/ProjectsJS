@@ -1,8 +1,5 @@
-const options = ["Wykonaj", "Przemyśl to zanim przejdziesz do dzialania", "Życie jest zbyt krótkie by myśleć!"];
+const options = ["Wykonaj", "Przemyśl to zanim przejdziesz do dzialania", "Życie jest zbyt krótkie by myśleć!", "Walcz!", " Nie wiem!", "Wymyśl coś!"];
 
-const showAdArr = ["Walcz!", " Nie wiem!", "Wymyśl coś!"];
-
-const h1 = document.querySelector('h1');
 const input = document.querySelector('input');
 
 const addOption = (e) => {
@@ -18,7 +15,7 @@ const cleanOption = (e) => {
 
 const showAdvice = (e) => {
     e.preventDefault();
-    h1.textContent = `${showAdArr[Math.floor(Math.random() * showAdArr.length)]}`;
+    document.querySelector('h1').textContent = `${options[Math.floor(Math.random() * options.length)]}`;
 }
 
 const showOpp = (e) => {
