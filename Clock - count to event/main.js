@@ -13,15 +13,17 @@ setInterval(() => {
         // const days = endTime / (1000 * 60 * 60 * 24);//ilość dni od 1.1.1970 do endTime
         const days = Math.floor((endTime / (1000 * 60 * 60 * 24)) - (nowTime / (1000 * 60 * 60 * 24))); //ilość dni od obecnej daty do endTime
 
-        const hours = Math.floor(((endTime / (1000 * 60 * 60)) - (nowTime / (1000 * 60 * 60))) % 24);
+        let hours = Math.floor(((endTime / (1000 * 60 * 60)) - (nowTime / (1000 * 60 * 60))) % 24);
 
-        const minutes = Math.floor(((endTime / (1000 * 60)) - (nowTime / (1000 * 60))) % 60);
+        hours = hours < 10 ? `0${hours}` : hours;
 
+        let minutes = Math.floor(((endTime / (1000 * 60)) - (nowTime / (1000 * 60))) % 60);
 
-        const seconds = Math.floor(
+        minutes = minutes < 10 ? `0${minutes}` : minutes;
+        let seconds = Math.floor(
             ((endTime / 1000) - (nowTime / 1000)) % 60
         );
-
+        seconds = seconds < 10 ? `0${seconds}` : seconds;
 
         spanD.textContent = days;
         spanH.textContent = hours;
