@@ -1,5 +1,3 @@
-// http://websamuraj.pl/examples/js/projekt11/
-
 const btnStart = document.querySelector('.main');
 const btnReset = document.querySelector('.reset');
 
@@ -14,11 +12,11 @@ const start = () => {
 }
 
 const reset = () => {
+    time = 0;
     stoper.textContent = "---"
-    clearInterval(interval);
+    active = false;
     btnStart.textContent = "Start";
-    active = active;
-    console.log("reset" + active)
+    clearInterval(interval);
 }
 
 
@@ -27,12 +25,10 @@ const count = () => {
         active = !active;
         btnStart.textContent = "Pauza";
         interval = setInterval(start, 10)
-        console.log("pauza" + active)
     } else {
         active = !active;
         btnStart.textContent = "Start";
         clearInterval(interval);
-        console.log("start" + active)
     }
 }
 
