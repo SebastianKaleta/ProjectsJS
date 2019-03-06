@@ -5,7 +5,7 @@ const ul = document.querySelector('ul');
 const taskNumber = document.querySelector('h1 span');
 const listItems = document.getElementsByClassName('task'); //aktualizuje nam na żywo ale nie można forEach
 const input = document.querySelector('input');
-
+ 
 
 
 const removeTask = (e) => {
